@@ -1136,7 +1136,7 @@ function edit_user() {
     $user_password = escape_string($_POST['user_password']);
     $user_photo = $_FILES['file']['name'];
     $user_photo_tmp = $_FILES['file']['tmp_name'];
-    
+
     // hide password in db
     $user_password = password_hash($user_password, PASSWORD_BCRYPT, array('cost' => 10));
 
